@@ -1,1 +1,188 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+
+    .upper-header {
+        background-color: #0282F9;
+        padding-right: 5rem;
+
+        a {
+            color: white;
+            font-size: 10px;
+
+
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .s-bar {
+        border: none;
+    }
+
+    .s-control {
+        border-bottom: 2px solid #0282F9;
+        height: 25px;
+
+        i {
+            color: #464646;
+            font-weight: bold;
+        }
+    }
+
+    li {
+        font-size: 12px;
+
+        padding: 0 5px;
+
+        align-self: center;
+
+        a {
+            color: #464646 !important;
+        }
+    }
+}
+
+.label-blu {
+    width: 155px;
+    top: 0;
+    transform: translateY(-250%);
+}
+
+// .cards-container {
+//     position: relative;
+
+// }
+
+
+.footer-top {
+    background-color: #0282F9;
+    color: white;
+    height: 70px;
+
+    .footer-icons {
+        width: 80px;
+        height: 40px
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+footer {
+    span {
+        font-size: 12px
+    }
+
+
+    .footer-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bottom-footer {
+        background-color: #303030;
+        height: 70px;
+
+    }
+
+}
+
+.jumbotron {
+
+
+    img {
+        width: 100%;
+        height: 450px;
+        aspect-ratio: 4/2;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
+
+
+.main-bkg {
+    background-color: #1D1D1D;
+}
+
+.card-custom {
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-h4 {
+    background-color: rgba(41, 41, 41, 0.726);
+    text-decoration: none;
+}
+
+.active {
+    color: #0282F9 !important;
+    border-bottom: 3px solid #0282F9;
+}
+
+.card-show {
+    top: 0;
+    left: 0;
+    transform: translateY(-120%);
+    width: 150px;
+    height: 200px;
+}
+
+.blue-line-comics {
+    height: 100px;
+    width: 100%;
+    background-color: #0282F9;
+}
+
+.text-thumb {
+    font-size: 8px;
+    color: white;
+    height: 15px;
+    font-weight: bold;
+    background-color: #00A9D9;
+}
+
+.comic-footer-top {
+    background-color: #8383839f;
+    color: white;
+    height: 70px;
+
+    .footer-icons {
+        width: 80px;
+        height: 40px
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    span {
+        font-size: 10px;
+        padding-right: 3px;
+
+    }
+}
+
+.comic-footer-top-row {
+    background-color: #8383839f;
+}
