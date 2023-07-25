@@ -14,8 +14,6 @@
                    @empty
                     <div> no comics found</div>
                    @endforelse
-                       
-                  
                 </div>
             </div>
         </div>
