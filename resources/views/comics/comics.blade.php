@@ -5,7 +5,7 @@
     @include('partials.jumbotron')
         <div class="col-12 blue-line-comics"></div>
         <div class="d-flex justify-content-around position-relative">
-            <div class="col-3 ms-5 film-card d-flex position-absolute card-show " style="background-image:url({{ $comic['thumb'] }})"
+            <div class="col-3 ms-5 film-card d-flex position-absolute card-show " style="background-image:url({{ $comic ->thumb }})"
                 alt="poster">
                 <div class="w-100 d-flex align-self-end h-100 flex-column justify-content-between">
                 <span class="label w-50 text-center text-thumb">COMIC BOOK</span>
@@ -15,13 +15,13 @@
             <div  class="text-white ps-5 py-4">
                 <div class="d-flex justify-content-around pt-5">
                     <div class="col">
-                        <h4>{{$comic['title']}}</h4>
-                        <h6>{{$comic['series']}}</h6>
+                        <h4>{{$comic->title}}</h4>
+                        <h6>{{$comic->series}}</h6>
                         <div class="d-flex flex-column">
-                            <span><strong>Release Date:</strong> <span class="text-uppercase">{{ date('Y-M-d', strtotime($comic['sale_date'])) }}</span></span>
-                            <span><strong>Price:</strong>{{$comic['price']}}</span>
+                            <span><strong>Release Date:</strong> <span class="text-uppercase">{{ date('Y-M-d', strtotime($comic->sale_date)) }}</span></span>
+                            <span><strong>Price:</strong>{{$comic->price}}</span>
                             <div class="col pe-5 mt-5">
-                                <p class=" text-white">{{$comic['description']}}</p>
+                                <p class=" text-white">{{$comic->description}}</p>
                             </div>
                             <div class="pt-4 d-flex">
                                 <div class="d-flex flex-column">
