@@ -15,33 +15,27 @@
             <div  class="text-white ps-5 py-4">
                 <div class="d-flex justify-content-around pt-5">
                     <div class="col">
-                        {{-- <h4>{{$comic['title']}}</h4>
-                        <h6>{{$comic['series']}}</h6> --}}
+                        <h4>{{$comic['title']}}</h4>
+                        <h6>{{$comic['series']}}</h6>
                         <div class="d-flex flex-column">
-                            {{-- <span><strong>Release Date:</strong> <span class="text-uppercase">{{ date('Y-M-d', strtotime($comic['sale_date'])) }}</span></span>
+                            <span><strong>Release Date:</strong> <span class="text-uppercase">{{ date('Y-M-d', strtotime($comic['sale_date'])) }}</span></span>
                             <span><strong>Price:</strong>{{$comic['price']}}</span>
                             <div class="col pe-5 mt-5">
-                                <p class=" text-white">{{$comic['description']}}</p> --}}
+                                <p class=" text-white">{{$comic['description']}}</p>
                             </div>
                             <div class="pt-4 d-flex">
                                 <div class="d-flex flex-column">
                                     <h5 class="ms-5">Art by:</h5>
                                     <ul class="ms-4">
-                                        {{-- @foreach ($comic['artists'] as $artist)
-                                    <li> 
-                                        {{$artist}}
-                                    </li>
-                                    @endforeach --}}
+                                        <li> 
+                                            {{$comic->artists}}
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <h5 class="ms-5">Writers:</h5>
                                     <ul class="ms-4">
-                                        {{-- @foreach($comic['writers'] as $writers)
-                                        <li>
-                                            {{$writers}}
-                                        </li> --}}
-                                        @endforeach
+                                        <li>{{$comic->writers}}</li>
                                     </ul>
                                 </div>
                             </div>
