@@ -10,6 +10,7 @@
                    @forelse ($comics as $comic)
                    <div class="col-3 m-2 card-custom d-flex" style="background-image:url({{$comic->thumb}})">
                        <span class="align-self-end h-25 text-white fw-bold text-center bg-h4 w-100">{{$comic->title}}</span>
+                       <a class="btn btn-sm btn-primary" href="{{route('comic', $comic ->id)}}">More</a>
                    </div>
                    @empty
                     <div> no comics found</div>
